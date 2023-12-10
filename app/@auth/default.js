@@ -1,4 +1,4 @@
-// app/@team/default.js
-export default function Page() {
-    return <h1>Hello, Team Default!</h1>
+// app/@auth/default.js
+export default function Default() {
+    return null
   }
