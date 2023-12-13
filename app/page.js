@@ -4,11 +4,10 @@ export default function Home() {
     'use server';
     const name = formData.get('name');
   }
-
   return (
     <form action={handleFormAction}>
       <input type="text" name="name" />
-      <button type="submit">Submit</button>
+      <button type="submit">Submit!</button>
     </form>
   )
 }
