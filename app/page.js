@@ -1,7 +1,14 @@
-// app/page.js
+// app/page.jsx
 export default function Home() {
+  async function handleFormAction(formData) {
+    'use server';
+    const name = formData.get('name');
+  }
 
   return (
-    <h1>app</h1>
+    <form action={handleFormAction}>
+      <input type="text" name="name" />
+      <button type="submit">Submit</button>
+    </form>
   )
 }
